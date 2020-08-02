@@ -76,12 +76,43 @@
 				<a href="#" class="list-group-item">5강 조건문과 반복문</a>
 			</ul>
 		</div>
+		<!-- 동영상 삽입하는 블록 -->
 		<div class="row">
 							<!-- 클래스명 뒤에 해상도 적어주는 것 -->
 			<div class="embed-responsive embed-responsive-16by9">
 				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4IRIgcDzkVk"></iframe>
 			</div>
 		</div>
+		<br><br><br>
+		<!-- 소스코드 출력 기능 -->
+		<div class="row">
+			<p>
+				첫 번째 강의는 C언어 개발 환경을 설치한 이후에 "Hello World"를 출력해보는 시간을 가집니다.
+			</p>
+			<br>
+			<pre class="pre-scrollable">
+		<!-- 왼쪽 꺽쇠, 오른쪽 꺽쇠 표현식 -->
+#include &lt;stdio.&gt;
+
+int main(void)
+{
+  printf("Hello World!");
+}
+			</pre>
+		</div>
+	</div>
+	<div class="container">
+	<hr>
+		<!-- form태그 구현부분 -->
+		<form action="" class="form-horizontal">
+			<div class="form-group">
+				<label for="commentContent">댓글</label>
+				<textarea class="form-control" rows="5" id="commentContent" name="commentContent"></textarea>
+				<br>
+				<button type="submit" class="btn pull-right">등록</button>
+			</div>
+		</form>
+		<hr>
 	</div>
 	<footer style="background-color: #000000; color: #ffffff;" >
 		<div class="container">
