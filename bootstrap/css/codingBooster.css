@@ -1,5 +1,5 @@
 /* 전체 영역을 통틀어서 스타일 정의 */
-@import url(http://fonts.googlepis.com/earlyaccess/nanumgothic.css);
+@import url(//fonts.googleapis.com/earlyaccess/kopubbatang.css);
 *{
     font-family: 'Nanum Gothic';
 }
