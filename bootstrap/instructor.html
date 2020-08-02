@@ -8,6 +8,35 @@
 	<link rel="stylesheet" href="css/codingBooster.css">
 </head>
 <body>
+	<style>
+		blockquote{
+			background: lightpink;
+			border-left: 10px solid blue;
+			margin: 1.5em 10px;
+			padding: 0.5em 10px;
+			quotes: "\201C""\201D""\2020""\2021";
+		}
+		/* 들어가기 전 */
+		blockquote::before{
+			color: #0f0f0f;
+			/* 열린 따옴표 */
+			content: open-quote;
+			font-size: 3em;
+			line-height: 0.1em;
+			margin-left: 0.25em;
+			vertical-align: -0.4em;
+		}
+		/* 들어간 후 */
+		blockquote:after{
+			color: red;
+			/* 닫힌 따옴표 */
+			content: close-quote;
+			font-size: 3em;
+			line-height: 0.1em;
+			margin-left: 0.25em;
+			vertical-align: -0.4em;
+		}
+	</style>
 	<!-- 헤더의 메뉴 부분 기본 세팅 -->
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
@@ -67,7 +96,7 @@
 		<!--하나의 열이라는 것을 알려줄 row 클래스-->
 		<div class="row">
 			<div class="col-xs-12">
-				<div class="panel panel-primary" style="border: 2px double palevioletred; background-color: ">
+				<div class="panel panel-primary" style="border: 2px double palevioletred;">
 					<div class="panel-heading" style="background-color: palevioletred; border-bottom: palevioletred	;">
 						<h3 class="panel-title">
 							<span class="glyphicon glyphicon-tags"></span>
@@ -89,6 +118,7 @@
 							</div>
 						</div>
 					</div>
+					<!--테이블 만들기-->
 					<table class="table">
 						<thead>
 							<tr>
@@ -119,6 +149,12 @@
 							</tr>
 						</tbody>
 					</table>
+					<!--테이블 만들기 완료-->
+					<!--인용구 만들기 Start-->
+					<div class="panel-footer">
+						<blockquote>Do And Forget!</blockquote>
+					</div>
+					<!--인용구 만들기 End-->
 				</div>
 			</div>
 		</div>
